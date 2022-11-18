@@ -11,7 +11,7 @@ while True:
     os.system("cls")
     break
 logging.disable(level=(logging.DEBUG))
-API = IQ_Option('ed.mi.goveia@gmail.com', '24030907*Ed*')
+API = IQ_Option(user, 'password')
 API.connect()
 
 if API.check_connect():
