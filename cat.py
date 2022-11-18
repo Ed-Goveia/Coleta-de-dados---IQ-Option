@@ -6,14 +6,13 @@ import os
 import time
 import threading
 import logging
-
+from Credenciais import u_cre, password_cre
 while True:
     os.system("cls")
     break
 logging.disable(level=(logging.DEBUG))
-API = IQ_Option(user, 'password')
+API = IQ_Option(u_cre, password_cre )
 API.connect()
-
 if API.check_connect():
 	print(' Conectado com sucesso!')
 else:
