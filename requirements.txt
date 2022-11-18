@@ -5,3 +5,5 @@ pandas
 torch
 torchvision==0.13.1
 tqdm==4.64.0
+candlestick-patterns-subodh101
+git+https://github.com/iqoptionapi/iqoptionapi.git@7.1.1
