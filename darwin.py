@@ -13,7 +13,7 @@ import threading
 # limpar terminal
 
 
-os.system("cls")
+os.system("clear")
  
 # Modo de conta
 logging.disable(level=(logging.DEBUG))
@@ -28,17 +28,17 @@ try:
     ap_ini = "..."
     for i in range(2): 
         slide(ap_ini,0.5)
-        os.system("cls")
+        os.system("clear")
     
-    os.system("cls")
+    os.system("clear")
     ola = "Olá, tudo bem?"
     slide(ola, 0.2)
     time.sleep(1)
-    os.system("cls")
+    os.system("clear")
     lets_go = "Vamos começar?"
     slide(lets_go,0.12)
     time.sleep(1)
-    os.system("cls")
+    os.system("clear")
     ap_user = "Por favor, digite seu Email e senha usados na sua conta da Iq Option \n"
     slide(ap_user,0.08)
     time.sleep(1)
@@ -49,7 +49,7 @@ try:
         username =  input (' \nUsarname: ')   #input("  \nUsuário: ")
         passaword = input (' \nPassaword: ' )   #input("Senha: ")
         
-        os.system("cls")
+        os.system("clear")
         connec = "Conectando"
         slide(connec,0.1),slide(ap_ini,0.3)
 
@@ -61,7 +61,7 @@ try:
             if "code" in ress and ress["code"] == "invalid_credentials":
                 
                 while True:
-                    os.system("cls")
+                    os.system("clear")
                     break
                 print (f' Tentativa {try_login + 1}')
                 print("\n\nErro ao conectar: Usuário ou senha incorreta\n\n")
@@ -79,19 +79,19 @@ try:
 
     
     while True:
-        os.system("cls")
+        os.system("clear")
         break
-    os.system("cls")
+    os.system("clear")
     print(' Conectado com sucesso!')
     time.sleep(2)
     while True:
         try:
             mode= int(input('\n\033[35m+\033[0m Deseja operar na conta PRACTICE ou REAL? \n 1 - PRACTICE\n 2 - REAL\n [\033[35m...\033[0m]: ')) 
             if mode > 0 and mode < 3 : 
-                os.system("cls")
+                os.system("clear")
                 break
         except:
-            os.system("cls")
+            os.system("clear")
             print('\n Opção invalida')
   
     def m():
@@ -104,7 +104,7 @@ try:
     
     
     while True:
-        os.system("cls")
+        os.system("clear")
         break
     mo = m()
     
@@ -143,7 +143,7 @@ timeframe = frame * 60 # para pegar os candles
 expirations_mode = frame
 total = 0
 
-os.system("cls")
+os.system("clear")
 while True:
     
     
@@ -166,10 +166,10 @@ while True:
             ini_buy_amount = float(input('\n\033[35m+\033[0m Defina o valor que deseja usar para as entradas: '))
             break
         except:
-            os.system("cls")
+            os.system("clear")
             print('Opcão Inválida!')
     
-    os.system("cls")
+    os.system("clear")
     
     # Configuração Stop WIN
     
@@ -189,10 +189,10 @@ while True:
             stop_gain = int(input(f'\n\033[35m + \033[0mDefina o valor de Stop Win: '))
             break
         except:
-            os.system("cls")
+            os.system("clear")
             print('Opcão Inválida!')
     
-    os.system("cls")
+    os.system("clear")
     
     # Configuração de stop loss
     print(f' [ STOP LOSS ]')
@@ -211,7 +211,7 @@ while True:
             stop_loss = (int(input('\n\033[35m+\033[0m Defina o valor de Stop Loss: ')))* - 1
             break
         except:
-            os.system("cls")
+            os.system("clear")
             print('Opcão Inválida!')
       
     #Ánalise de micro-tendência
@@ -227,7 +227,7 @@ while True:
 
     # Tipo de ciclo (recuperação // fator martigale)
     
-    os.system("cls")
+    os.system("clear")
     print(f' [ RECUPERAÇÃO ]')
     time.sleep(0.5)
     while True:
@@ -248,13 +248,13 @@ while True:
             einstein = 0
             init = int(input('\n 0 - não desejo utilizar \n 1 - desejo utilizar \n [\033[35m...\033[0m]: '))
             if init == 0 or init == 1: 
-                os.system("cls")
+                os.system("clear")
                 break
             else:
-                os.system("cls")
+                os.system("clear")
                 print('\n Opção invalida')
         except:
-            os.system("cls")
+            os.system("clear")
             print('\n Error')
     
     while True:
@@ -280,12 +280,12 @@ while True:
         if tipe_cicle > 0 and tipe_cicle < 4: break
         
         else:
-            os.system("cls")
+            os.system("clear")
             print('\n Opção invalida')
     
     while True:
         if init == 0: break
-        os.system("cls")
+        os.system("clear")
         time.sleep(0.5)
         print(' [ NÍVEL DE RECUPERÇÃO ]')
         time.sleep(0.5)
@@ -299,14 +299,14 @@ while True:
             elif tipe_cicle != 3: einstein = 0
             break
         except: 
-            os.system("cls")
+            os.system("clear")
             print('\n Opção invalida')
         break
         
 
     # Definição de buy_amount de delay
     
-    os.system("cls")
+    os.system("clear")
     print(' [ DELAY ]')
     time.sleep(0.5)
     while True:
@@ -315,10 +315,10 @@ while True:
             if Delay > 0 and Delay < 31 : 
                 break
         except Delay > 30:
-            os.system("cls")
+            os.system("clear")
             print('\n Opção invalida')
         except:
-            os.system("cls")
+            os.system("clear")
             print('\n Opção invalida')
     break
 
@@ -344,7 +344,7 @@ vel_a = 15
 def scan():
     while True:
         while True:
-            os.system("cls")
+            os.system("clear")
             break
         print(f'Conectado em: {username}\nUtilizando sua conta \033[34m{str(mo)}\033[0m\n\n')
         time.sleep(0.5)
