@@ -721,9 +721,11 @@ def mhi(opened, closed):
         if r < 5 and g < 5: # doji operacional
             if doji == 0:
                 if doji_lu <=1:
+                    
                     if r_p - 1 > g_p: signal = 'put'
                     if g_p - 1 > r_p: signal = 'call'
-                    else: 
+                    
+                    if g_p == r_p:
                         if g_y > r_y: signal = 'call'
                         if r_y > g_y: signal = 'put'
                         else:
