@@ -1171,7 +1171,7 @@ def mhi(opened, closed):
                                                     if doji_lu == 1: signal = 'call'
 
                                             if r_a - 1 > g_a or g_a - 1 > r_a:
-                                                if r_a < 9 and g_a < 9:
+                                                if r_a < 11 and g_a < 11:
                                                     if r_p - 1 > g_p : signal = 'put'
                                                     if g_p - 1 > r_p : signal =  'call'
                     if r_q < 4:
@@ -1486,7 +1486,7 @@ def mhi(opened, closed):
                                                     if doji_lu == 1: signal = 'put'
 
                                             if r_a - 1 > g_a or g_a - 1 > r_a:
-                                                if r_a < 9 and g_a < 9:
+                                                if r_a < 11 and g_a < 11:
                                                     if r_p - 1 > g_p : signal = 'put'
                                                     if g_p - 1 > r_p : signal =  'call'
                                         
