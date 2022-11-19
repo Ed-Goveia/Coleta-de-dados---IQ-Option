@@ -563,10 +563,12 @@ def mhi(opened, closed):
             g_a += 1
         else:
             doji_a += 1
+    
     r_y = 0
     g_y = 0
     r_p = 0
     g_p = 0
+
     if g_a > r_a:
         if r > g : g_y = g_a - r
         if g > r : g_y = g_a - g
